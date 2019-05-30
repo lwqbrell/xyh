@@ -9,6 +9,10 @@
 namespace lib;
 use \conf\Config;
 
+/**
+ * Class Database
+ * @package lib
+ */
 class Database
 {
     static private $_db;
@@ -16,6 +20,10 @@ class Database
     {
         self::$_db=new \PDO(Config::DNS,Config::USER,Config::PWD);
     }
+
+    /**
+     * @return Database|\PDO
+     */
     static public function getInstance(){
         if (self::$_db){
             return self::$_db;

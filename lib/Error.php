@@ -8,8 +8,11 @@
 
 namespace lib;
 
-
+/**
+ * Class Error
+ * @package lib
+ */
 class Error
 {
-
+    const DBERROR='10001';
 }

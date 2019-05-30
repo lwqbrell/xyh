@@ -8,10 +8,16 @@
 
 namespace conf;
 
-
 class Config
 {
+    // 数据库配置
     const USER='root';
     const PWD='root';
     const DNS='mysql:host=localhost;dbname=xiyanhui';
+
+    // smarty配置
+    const TEMPLATEDIR='/views';
+    const CONFIGDIR='/views/smarty_configs/';
+    const COMPILEDIR='/tmp/templates_c/';
+    const CACHEDIR='/tmp/smarty_cache/';
 }

@@ -8,11 +8,27 @@
 
 namespace lib;
 
-
+/**
+ * Class Factory
+ * @package lib
+ */
 class Factory
 {
+    /**
+     * @return Database|\PDO
+     */
     static function createDatabase(){
-        $db=\lib\Database::getInstance();
+        $db=Database::getInstance();
+        Register::registerSet('mysql',$db);
         return $db;
+    }
+
+    /**
+     * @return \Smarty
+     */
+    static function createSmarty(){
+        $view=new View();
+        Register::registerSet('smarty',$view->smarty);
+        return $view->smarty;
     }
 }
