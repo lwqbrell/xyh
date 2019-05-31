@@ -7,7 +7,7 @@
  */
 
 namespace lib;
-use \PHPMailer\PHPMailer\Exception;
+use \Exception;
 
 /**
  * Class App

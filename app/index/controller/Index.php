@@ -26,4 +26,7 @@ class Index
         //$view->assign('title', 'this is index/index/name');
         $view->display('register.html');
     }
+    public function test(){
+        echo 'this is index/index/test';
+    }
 }
