@@ -16,6 +16,10 @@ use \conf\Config;
 class Database
 {
     static private $_db;
+
+    /**
+     * Database constructor. 单例模式
+     */
     private function __construct()
     {
         self::$_db=new \PDO(Config::DNS,Config::USER,Config::PWD);

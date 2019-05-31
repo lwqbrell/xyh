@@ -21,4 +21,9 @@ class Index
         $view->assign('title', 'this is index/index/name');
         $view->display('index.html');
     }
+    public function register(){
+        $view=\lib\Register::getRegister('smarty');
+        //$view->assign('title', 'this is index/index/name');
+        $view->display('register.html');
+    }
 }

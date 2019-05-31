@@ -9,7 +9,7 @@
 namespace lib;
 
 /**
- * Class Register
+ * Class Register 注册器模式
  * @package lib
  */
 class Register

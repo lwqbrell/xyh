@@ -9,7 +9,7 @@
 namespace lib;
 
 /**
- * Class Factory
+ * Class Factory 工厂模式
  * @package lib
  */
 class Factory
