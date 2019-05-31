@@ -17,7 +17,6 @@ class Config
 
     // smarty配置
     const TEMPLATEDIR='/views';
-    const CONFIGDIR='/views/smarty_configs/';
     const COMPILEDIR='/tmp/templates_c/';
-    const CACHEDIR='/tmp/smarty_cache/';
+    const CACHEDIR='/tmp/cache/';
 }

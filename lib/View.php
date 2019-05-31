@@ -25,7 +25,6 @@ class View
         $this->smarty=new \Smarty();
         //设置模板目录
         $this->smarty->setTemplateDir(BASEDIR .Config::TEMPLATEDIR);
-        $this->smarty->setConfigDir(BASEDIR .Config::CONFIGDIR);
         $this->smarty->setCompileDir(BASEDIR .Config::COMPILEDIR);
         $this->smarty->setCacheDir(BASEDIR .Config::CACHEDIR);
     }
